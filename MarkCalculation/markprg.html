@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mark Sheet Preparation</title>
+	
+</head>
+<body>
+<form method="get" action="#">
+<script type="text/javascript">
+	function markCalc()
+	{
+	let rno=[111,222,333,444,555,666,777];
+	let sn=['Ram','Kumar','Raja','Saran','Arun','Raj','Kamal'];
+	let m1=[77,56,76,45,87,76,54];
+	let m2=[99,34,76,96,67,76,98];
+	let m3=[88,55,99,44,66,98,67];
+	let m4=[88,66,33,99,66,76,56];
+	let m5=[77,65,99,77,55,76,56];
+
+	let tot=[];
+	let avg=[];
+	let res=[];
+	
+	for(let i=0;i<rno.length;i++)
+	{
+		tot[i]=m1[i]+m2[i]+m3[i]+m4[i]+m5[i];
+		avg[i]=tot[i]/5;
+		if(m1[i]<40 || m2[i]<40 || m3[i]<40 || m4[i]<40 || m5[i]<40)
+			res[i]='Fail';
+		else if(avg>=80)
+			res[i]='Honour';
+		else if(avg>=70 && avg<80)
+			res[i]='First Class';
+		else if(avg>=60 && avg<70)
+			res[i]='Second Class';
+		else if(avg>=50 && avg<60)
+			res[i]='Third Class';
+		else
+			res[i]='Pass';
+	}
+
+    document.write("<table border='1'>");
+    document.write("<tr>");
+    document.write("<th>"+"Roll Number"+"</th>");
+    document.write("<th>"+"Student Name"+"</th>");
+    document.write("<th>"+"Tamil"+"</th>");
+    document.write("<th>"+"English"+"</th>");
+    document.write("<th>"+"Maths"+"</th>");
+    document.write("<th>"+"Science"+"</th>");
+    document.write("<th>"+"Social"+"</th>");
+    document.write("<th>"+"Total"+"</th>");
+    document.write("<th>"+"Average"+"</th>");
+    document.write("<th>"+"Result"+"</th>");
+    document.write("</tr>");
+	for(let i=0;i<rno.length;i++)
+	{
+	document.write("<tr>");
+	document.write("<td>"+rno[i]+"</td>");	
+	document.write("<td>"+sn[i]+"</td>");	
+	document.write("<td>"+m1[i]+"</td>");	
+	document.write("<td>"+m2[i]+"</td>");	
+	document.write("<td>"+m3[i]+"</td>");	
+	document.write("<td>"+m4[i]+"</td>");	
+	document.write("<td>"+m5[i]+"</td>");	
+	document.write("<td>"+tot[i]+"</td>");	
+	document.write("<td>"+avg[i]+"</td>");	
+	document.write("<td>"+res[i]+"</td>");	
+    document.write("</tr>");
+	}
+	document.write("</table>");
+	return;
+}
+</script>
+<table border="1">
+<tr><th>Roll Number : </th><td><input type="text" name="rn"></td></tr>
+<tr><th>Student Name : </th><td><input type="text" name="sn"></td></tr>
+<tr><th>Tamil : </th><td><input type="text" name="t"></td></tr>
+<tr><th>English : </th><td><input type="text" name="e"></td></tr>
+<tr><th>Maths : </th><td><input type="text" name="m"></td></tr>
+<tr><th>Science : </th><td><input type="text" name="s"></td></tr>
+<tr><th>Social : </th><td><input type="text" name="ss"></td></tr>
+<tr><th>Total : </th><td><input type="text" name="tt"></td></tr>
+<tr><th>Average : </th><td><input type="text" name="aa"></td></tr>
+<tr><th>Result : </th><td><input type="text" name="rr"></td></tr>
+<tr><td><input type="reset" value="Clear" name="ret"><input type="button" name="btn1" value="Calculation"><td><input type="button" name="btn2" value="Report" onclick="markCalc();"><input type="button" name="btn3" value="Close" onclick="window.close();"> </td>
+</tr>	
+
+</table>
+
+</form>
+</body>
+</html>
+

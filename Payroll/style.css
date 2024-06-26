@@ -1,0 +1,87 @@
+body
+            {
+               
+                margin-right: 25%;
+                margin-left: 20%;
+                background-color: pink;
+            }
+            /*#bd
+            {
+                border:2px solid pink;
+                background-color: pink; 
+                background-position: center;
+                overflow:auto;
+            }*/
+                  
+            #s3
+            {
+                background-color: white;
+                width: 170px;
+                border: 1px solid lightgray;
+                margin: 10px;
+                position:sticky;
+                right:-15%;
+                float: right; 
+            }
+            #s1,#s4,#s6
+            {
+                position: sticky;
+                float:left;
+            }
+            #s2,#s5
+            {
+                position: relative;
+                left:150px;
+            }           
+            #hh1
+            {
+                text-align: center;
+                text-decoration: underline;
+            }
+            #h2
+            {
+              float:left;              
+              padding-left: 15%;
+            }
+            #h3
+            {
+                position: relative;
+                bottom: -2%;
+              padding-left: 65%;
+            }
+            input
+            {
+                margin: 10px;
+
+            }
+            div
+            {
+                padding: 60px;
+            }
+            #d1
+            {
+                padding: 50px;
+            }
+            #d3
+            {
+                padding: 20px;
+                margin-bottom: -40px;
+            }
+            #s7
+            {
+                position: relative;
+                left:250px;
+                bottom:60px;        
+            }
+            #s8
+            {
+               
+                margin-right: 30%;
+            }
+            @media only screen and (min-width:300px)and(max-width:1200px)
+            {
+                body
+                {
+                background-color : magenta;
+                }
+            }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payroll calculation</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="script" href="script.js">
+        </head>
+    <body>
+        <form  method="get"action="#">
+        <div id="bd" align="center">
+        <h1 id="hh1">PAYROLL CALCULATION</h1>
+        <hr>
+        <div id="dd1">
+        <section id="s1">
+        <label id="l1"class="t1">Employee No</label><br>
+        <input id="i1" type="text"class="t1" ><br>
+        <label  id="l2"class="t1">Department</label><br>
+        <input  id="i2"type="text"class="t1"><br>
+        <label  id="l3"class="t1">Basic Salary
+
+        </label><br>
+        <input  id="i3"type="text"class="t1"><br>
+        </section>
+        <section id="s2">
+        <label id="l4" class="l1">Employee Name</label><br>
+        <input id="i4"type="text"class="l1"><br>        
+        <label id="l5"class="l1">Designation</label><br>
+        <input  id="i5"type="text"class="l1"><br>        
+        <label  id="l6"class="l1">Accomadation</label><br>
+        </section>
+        <section id="s3">
+        <input id="i6" type="radio"  class="t1"name="r1" >Yes
+        <input  id="ii6"type="radio" name="r1" class="t1" >No
+        </section>
+        </div>
+        <hr>
+
+        <h2 id="h2">Allowances</h2>
+        <h2 id="h3">Deduction</h2><br>
+       
+
+        <hr>
+        <div id="d1">
+        <section id="s4">
+        <label  id="l7"class="t2" >HRA</label>
+        <input id="i7"type="text"class="t2"disabled><br>       
+        <label id="l8" class="t2">DA</label>
+        <input id="i8"type="text"class="t2"disabled><br>       
+        <label id="l9"class="t2">EA</label>
+        <input id="i9"type="text"class="t2"disabled><br>       
+       <label id="l10"class="t2">CA</label>
+       <input  id="i10"type="text"class="t2"disabled><br>
+        </section>
+        <sesction id="s5">
+       <label id="l11"class="l2">HRR</label>
+       <input id="i11"type="text"class="l2"disabled><br>
+       <label id="l12"class="l2">PF</label>
+       <input id="i12"type="text"class="l2"disabled><br>
+       <label id="l13"class="l2">LIP</label>
+       <input id="i13"type="text"class="l2"disabled><br>
+        </sesction>
+        </div>
+        <hr>
+
+        <div id="d3">
+        <section id="s6">
+        <label  id="l14"class="t3">GROSS SALARY</label><br>
+        <input id="i14" type="text"class="t3"disabled>
+        </section>
+        <section id="s8">
+        <label id="l15"class="t4">TOTAL DEDUCTION</label><br>
+        <input id="i15"type="text" class="t4"disabled>
+        </section>
+        <section id="s7">
+        <label id="l16"class="t5">NET SALARY</label><br>
+        <input  id="i16"type="text" class="t5"disabled>
+        </section>
+        </div>
+        <hr>
+        <div id="d4">
+            <input id="b1"type="reset"class="b1" value="New" >
+            <input id="b2"type="button"class="b1" value="Calc"onclick="payroll();">
+            <input id="b3"type="button"class="b1" value="Close" onclick="cls();">
+        </div>
+    </div>
+        </form>
+    </body>
+</html>
