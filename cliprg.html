@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Change Image using Click Button</title>
+</head>
+<body>
+<form method="get" action="#">
+<input type="button" name="btn1" value="<<" onclick="prev();">
+<img src="pic5.png" id="pic" alt="pictures">
+<input type="button" name="btn2" value=">>" onclick="next();">
+<p id="pp1">Over</p>
+</form>
+<script type="text/javascript">
+
+i=0;
+//let si=setInterval(next,1000);
+
+let img1=new Array("pic1.png","pic2.png","pic3.png","pic4.png","pic5.png");
+let txt=['Picture','First','Second','Third','Last'];
+
+function next()
+{
+	let pp=document.getElementById('pp1');
+	let p=document.getElementById('pic');
+	p.src=img1[i];
+	pp.innerHTML=txt[i];
+	i++;
+	if(i==img1.length)
+	{
+		i=0;
+		//clearInterval(si);
+		//pp.innerHTML="Picture";
+	}
+}
+function prev()
+{
+	let pp=document.getElementById('pp1');
+	let p=document.getElementById('pic');
+	p.src=img1[i];
+	pp.innerHTML=txt[i];
+	i--;
+	if(i==0)
+	{
+		i=img1.length-1;
+		//clearInterval(si);
+		//pp.innerHTML="Picture";
+	}
+}	
+</script>
+</body>
+</html>
