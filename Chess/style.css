@@ -1,0 +1,43 @@
+.chess
+		{
+			border-spacing: 0;
+			border-collapse:collapse;
+		}
+		.chess th
+		{
+			padding:50px;
+		}
+		.chess td
+		{
+			border:3px solid black;
+			width:2em;
+			height:2em;
+		}
+		.chess .dark
+		{
+		
+			background-color: black;
+		}
+		.chess .light
+		{
+			
+			background-color: white;
+		}
+		i
+		{
+			font-size:60px;
+		}
+		
+		.player2
+		{
+			width:5em;
+			height: 5em;
+			color:white;
+			background-color: black;
+			
+		}
+		.player1 
+		{
+			width:5em;
+			height: 5em;	
+		}

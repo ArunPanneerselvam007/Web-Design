@@ -1,0 +1,101 @@
+#pp1
+{
+    text-align: center;
+    width:200px;
+    color:white;
+    background-color: green;
+    border:2px solid green;
+    border-radius: 5px;
+    position:absolute;
+    right: 5%;
+    top: 0%;
+    padding: 10px;
+}
+#p1
+{
+    text-align: center;
+    width: 250px  ;
+    color:grey;
+    background-color:lightblue ;
+    border:2px solid lightblue;
+    padding:10px;
+}
+input
+{
+    border-radius: 5px;
+    border: 1px solid green;
+    margin: 10px;
+}
+
+div
+{
+    color:green;
+    background-color: lightblue;
+    padding: 50px;
+}
+.txt1
+{
+    width:85%;
+    height: 30px;
+    
+}
+.txt3
+{
+    width:85%;
+    height: 50px;
+}
+.txt2
+{
+    width:40%;
+    height: 30px;
+
+
+}
+.txt4
+{
+    width:41%;
+    height: 30px;
+    color:green;
+    padding: 5px;
+}
+#txt3
+{
+    width:40%;
+    height: 30px;
+}
+#txt2
+{
+    width:40%;
+    height: 30px;
+}
+li
+{
+    list-style: none;
+}
+#b1
+{
+    margin: 10px;
+    text-align: center;
+    width:100px;
+    color:white;
+    background-color: darkgreen;
+    border:2px solid darkgreen;
+    border-radius: 50px;
+    position: absolute;
+    left: 45%;
+}
+#l1
+{
+    position:relative;
+    right: 53%;
+    float: right;
+}
+#i1
+{
+    width:40%;
+    height: 30px;
+    position: absolute;
+    right: 16%;
+
+}  
+
